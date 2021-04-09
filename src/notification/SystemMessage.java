@@ -6,7 +6,7 @@ import Building.Room;
 public class SystemMessage implements Observer{
     @Override
     public void update(Room room) {
-        System.out.println("Temperature status: "  ); //dopisać status temperatury pobrany z pokoju
+        System.out.println("Temperature status in room No.  " + room.getRoomNumber() + "has been changed in to: " + room.getTemperatureStatus());
 
     }
 }

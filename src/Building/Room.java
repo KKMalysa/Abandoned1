@@ -6,29 +6,28 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Room implements Observable{
-    private int number;
+    private int RoomNumber;
     private double currentTemperature;
     private double targetTemperature;
     private double cubature;
     //for observer:
     private TemperatureStatus temperatureStatus;
-    private Set<Observer> registerObserver = new HashSet<Observer>();
+    private Set<Observer> registeredObserver = new HashSet<Observer>();
 
 
-    public Room(int number, double currentTemperature, double targetTemperature, double cubature, TemperatureStatus temperatureStatus) {
-        this.number = number;
+    public Room(int RoomNumber, double currentTemperature, double targetTemperature, double cubature) {
+        this.RoomNumber = RoomNumber;
         this.currentTemperature = currentTemperature;
         this.targetTemperature = targetTemperature;
         this.cubature = cubature;
-        this.temperatureStatus = temperatureStatus;
     }
 
-    public int getNumber() {
-        return number;
+    public int getRoomNumber() {
+        return RoomNumber;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setRoomNumber(int roomNumber) {
+        this.RoomNumber = roomNumber;
     }
 
     public double getCurrentTemperature() {
@@ -55,19 +54,34 @@ public class Room implements Observable{
         this.cubature = cubature;
     }
 
+    public TemperatureStatus getTemperatureStatus() {
+        return temperatureStatus;
+    }
+
+    public void setTemperatureStatus(TemperatureStatus temperatureStatus) {
+        this.temperatureStatus = temperatureStatus;
+    }
 
     @Override
     public void registerObserver(Observer observer) {
-
+        registeredObserver.add(observer);
     }
 
     @Override
     public void unregisterObserver(Observer observer) {
-
+        registeredObserver.remove(observer);
     }
 
     @Override
     public void notifyObservers() {
+        for(Observer observer : registeredObserver){
+            observer.update(this);
+        }
 
+    }
+
+    public void changeTemperatureStatus(TemperatureStatus temperatureStatus){
+        setTemperatureStatus(temperatureStatus);
+        notifyObservers();
     }
 }
