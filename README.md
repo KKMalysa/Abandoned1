@@ -31,5 +31,5 @@ OBSERWATOR:
  * najpierw dobrze będzie ustawić sztywną temperaturę na starcie, żeby upewnić się, że airConditioner 
  * szybciej doprowadza do temperatury zadanej niż się ona zmienia, a następnie przywrócić losowość na starcie
  
- * jak sie poczyni założenia odnośnie pokojów, to można budowniczego na siłę wcisnąć - zobaczymy. 
+ * jak sie poczyni założenia odnośnie pokojów, to można budowniczego na siłę wcisnąć. 
  
