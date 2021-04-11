@@ -21,4 +21,15 @@ powinna ona być utrzymywana na stałym poziomie.
 
 Zagadnienia przydatne do rozwiązania: definiowanie klas, metod i obiektów, polimorfizm, tablice, pętle, instrukcje sterujące.
 
+
 10.04.2021 :analiza pod względem rozbudowy i zastowosawania wzorców projektowych
+zamysł jest taki:
+OBSERWATOR:
+ * trzeba zrobić tak, żeby co jakiś czas temperatura zmieniała się o randomową wartość,
+ * wzorzec obserwator będzie monitorował temperaturę w pokojach i za każdym razem uruchamiał
+ * metodę room.temperatureKeeper();
+ * najpierw dobrze będzie ustawić sztywną temperaturę na starcie, żeby upewnić się, że airConditioner 
+ * szybciej doprowadza do temperatury zadanej niż się ona zmienia, a następnie przywrócić losowość na starcie
+ 
+ * jak sie poczyni założenia odnośnie pokojów, to można budowniczego na siłę wcisnąć - zobaczymy. 
+ 
