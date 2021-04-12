@@ -33,4 +33,4 @@ OBSERWATOR:
  
  * jak sie poczyni założenia odnośnie pokojów, to można budowniczego na siłę wcisnąć. 
  
- 12.04 Problem z wyświetlaniem - //TODO
+ 12.04.2021 Problem z wyświetlaniem - //TODO
