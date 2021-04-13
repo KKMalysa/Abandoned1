@@ -1,4 +1,6 @@
-# AirConditioner2 ROZBUDOWAŁEM PROJEKT:
+# AirConditioner2 
+
+ROZBUDOWAŁEM PROJEKT: (BRANCH: second)
 
 - AirConditioner może nie tylko chłodzić, ale i ogrzewać pomieszczenie do zadanej temperatury 
 - dodałem zdarzenie pogodowe, które wpływa nieznacznie na pogode w pomieszczeniu
