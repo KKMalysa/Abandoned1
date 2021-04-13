@@ -6,7 +6,8 @@
   gdy temperatura będzie inna niż temperatura zadana
 
 ---------------------------------------------------------------------------------------------
-TREŚĆ ZADANIA
+TREŚĆ ZADANIA: 
+
 Napisz program, który będzie symulował regulację temperatury w pomieszczeniach pewnego budynku.
 Budynek składa się z 4 pomieszczeń, a każde pomieszczenie może posiadać niezależny klimatyzator jednego z dwóch typów:
 BasicAirConditioner - obniża temperaturę pomieszczenia proporcjonalnie o 1 stopień na minutę przy wydajności 1 metra sześciennego na minutę. 
