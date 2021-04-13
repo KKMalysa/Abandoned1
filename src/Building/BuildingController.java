@@ -8,7 +8,7 @@ public class BuildingController {
     }
 
     public void controlLoop() {
-        while (!building.keepTheTemperature()){
+        while (!building.reachTheTemperature()){
             System.out.println(building);
             building.checkTemperature();
             sleepOneSecond();
@@ -17,11 +17,27 @@ public class BuildingController {
         System.out.println("Each room has reached its target temperature");
     }
 
+    public void weatherLoop() {
+        while (true){
+            building.weatherCondition();
+            sleepFiveSecond();
+        }
+
+    }
+
     private void sleepOneSecond() {
         try {
-            Thread.sleep(1);  // default value 1000
+            Thread.sleep(1000);  // default value 1000
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
+    private void sleepFiveSecond() {
+        try {
+            Thread.sleep(5000);  // default value 1000
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

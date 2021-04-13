@@ -76,4 +76,6 @@ public class Room {
             currentTemperature = airConditioner.heating(currentTemperature, cubature);
         }
     }
+
+
 }
